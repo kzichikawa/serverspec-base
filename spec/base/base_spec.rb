@@ -16,11 +16,6 @@ describe service('sshd') do
   it { should be_running }
 end
  
-# check dns
-describe host('affro.jp') do
-  it { should be_resolvable }
-end
-
 # check running port
 describe port(22) do
   it { should be_listening.with('tcp') }
