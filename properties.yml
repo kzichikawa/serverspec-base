@@ -7,7 +7,7 @@ web01:
   :ip: xx.xx.xx.xx 
   :host_name: web01
  
-cosme-web02:
+web02:
   :roles:
     - base
     - php
