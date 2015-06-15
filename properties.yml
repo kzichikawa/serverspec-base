@@ -1,11 +1,11 @@
-cosme-web01:
+web01:
   :roles:
     - base
     - php
     - nginx
     - php-fpm
-  :ip: 10.0.1.21
-  :host_name: cosme-web01
+  :ip: xx.xx.xx.xx 
+  :host_name: web01
  
 cosme-web02:
   :roles:
@@ -13,14 +13,14 @@ cosme-web02:
     - php
     - nginx
     - php-fpm
-  :ip: 10.0.1.22
-  :host_name: cosme-web02
+  :ip: xx.xx.xx.xx
+  :host_name: web02
 
-db230:
+db01:
   :roles:
     - base
     - mysql
-  :ip: 10.0.1.22
-  :host_name: db230
+  :ip: xx.xx.xx.xx
+  :host_name: db01
 
 

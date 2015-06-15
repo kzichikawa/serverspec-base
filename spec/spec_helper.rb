@@ -29,21 +29,7 @@ set :host,        options[:host_name] || host
 set :ssh_options, options
 
 
-#include Serverspec::Helper::Ssh
-#include Serverspec::Helper::DetectOS
-#
-#RSpec.configure do |c|
-#  c.host  = ENV['TARGET_HOST']
-#  options = Net::SSH::Config.for(c.host)
-#  user    = options[:user] || Etc.getlogin
-#  c.ssh   = Net::SSH.start(c.host, user, options)
-#  c.os    = backend.check_os
-#end
-
-
 RSpec.configure do |c|
   c.path = '/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH'
 end
 
-# Set PATH
-#set :path, '/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH'
