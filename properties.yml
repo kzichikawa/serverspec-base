@@ -6,7 +6,7 @@ web01:
     - php-fpm
   :ip: xx.xx.xx.xx 
   :host_name: web01
- 
+o
 web02:
   :roles:
     - base

@@ -20,7 +20,7 @@ describe file('/etc/nginx/nginx.conf') do
   it { should be_file }
 end
 
-# check log dir permission
+# check log permission
 describe file('/var/log/nginx') do
   it { should be_mode 755 }
 end
